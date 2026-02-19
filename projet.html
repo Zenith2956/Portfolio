@@ -1,0 +1,242 @@
+<section id="projet" class="bg-gray-100 pt-20">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="title">Listes des Projets</h2>
+
+
+    <div class="slider" style="--width: 300px;
+    --height: 500px;
+    --quantity: 3;">
+      <div class="list">
+        <div class="item" style="--position: 1">
+          <button command="show-modal" commandfor="dialog_1"
+            class="rounded-md bg-white/10 px-2.5 py-1.5 text-sm font-semibold text-white inset-ring inset-ring-white/5 hover:bg-white/20">
+            <div class="card_projet">
+
+              <img src="img/logo_phenix.jpg" alt="E-Commerce Platform" class="w-full h-48 object-cover" />
+              <div class="p-6 flex flex-col flex-1">
+                <h3 class="text-xl font-semibold mb-2" style="color: black;">Interface graphique</h3>
+                <p class="text-gray-500 mb-4 flex-1">
+                  Adaptation d’une interface graphique sous un nouveau langage pour rendre l’utilisation d'un logiciel
+                  plus simple pour les futurs utilisateurs.
+                </p>
+                <div class="mb-4 flex flex-wrap gap-2">
+                  <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded-full text-xs">Avalonia (C#)</span>
+                  <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded-full text-xs">Visual Studio</span>
+                </div>
+              </div>
+            </div>
+        </div>
+        </button>
+
+        <el-dialog>
+          <dialog id="dialog_1" aria-labelledby="dialog-title"
+            class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent">
+            <el-dialog-backdrop
+              class="fixed inset-0 bg-gray-900/50 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"></el-dialog-backdrop>
+
+            <div tabindex="0"
+              class="flex min-h-full items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0">
+              <el-dialog-panel
+                class="relative transform overflow-hidden rounded-lg bg-gray-800 text-left shadow-xl outline -outline-offset-1 outline-white/10 transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-lg data-closed:sm:translate-y-0 data-closed:sm:scale-95">
+                <div class="bg-gray-800 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                  <h1 class="h1">Objectif Majeure :</h1>
+                  <div class="sm:flex sm:items-start">
+                    <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                      <div class="mt-2">
+                        <ul>
+                          <p class="text-gray-500 mb-4 flex-1">
+                            ● Créer une interface graphique dynamique permettant de faciliter le passage de donnée
+                            entre plusieurs page
+                          </p>
+                          <p class="text-gray-500 mb-4 flex-1">
+                            ● Respecter la nouvelle charte graphique utilisée par l’entreprise.
+                          </p>
+                          <p class="text-gray-500 mb-4 flex-1">
+                            ● Ne pas modifier les lignes de code qui permette le fonctionnement de l’application en
+                            backend tout en les reliant à des boutons et fonctions de l’interface graphique.
+                          </p>
+                          <p>
+                            <a href="https://youtu.be/uqbFSKJgPx4">démonstration de l'impression</a>
+                          </p>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-gray-700/25 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+
+                  <button type="button" command="close" commandfor="dialog_1"
+                    class="mt-3 inline-flex w-full justify-center rounded-md bg-white/10 px-3 py-2 text-sm font-semibold text-white inset-ring inset-ring-white/5 hover:bg-white/20 sm:mt-0 sm:w-auto">Cancel</button>
+                </div>
+              </el-dialog-panel>
+            </div>
+          </dialog>
+        </el-dialog>
+
+
+
+
+
+        <div class="item" style="--position: 2">
+          <button command="show-modal" commandfor="dialog_2">
+
+
+            <div class="card_projet">
+              <img src="img/comcom_crozon.jpg" alt="Task Management App" class="w-full object-cover" />
+              <div class="">
+                <h3 class="text-xl font-semibold mb-2" style="color: black;">Site événementiel</h3>
+                <p class="text-gray-500 mb-4 flex-1">
+                  Création d’un site Web pour faciliter la prise en compte des personnes s’inscrivant à l'événement
+                  annuelle : Semaine Petite enfance, organisé dans centre culturel l’Améthyste à Crozon </p>
+
+                <div class="mb-4 flex flex-wrap gap-2">
+                  <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded-full text-xs">CodeIgniter (php)</span>
+                  <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded-full text-xs">Adminer(MySQL)</span>
+                  <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded-full text-xs">HTML/CSS</span>
+                  <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded-full text-xs">Debian(linux)</span>
+                </div>
+              </div>
+            </div>
+          </button>
+        </div>
+
+
+        <el-dialog>
+          <dialog id="dialog_2" aria-labelledby="dialog-title"
+            class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent">
+            <el-dialog-backdrop
+              class="fixed inset-0 bg-gray-900/50 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"></el-dialog-backdrop>
+
+            <div tabindex="0"
+              class="flex min-h-full items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0">
+              <el-dialog-panel
+                class="relative transform overflow-hidden rounded-lg bg-gray-800 text-left shadow-xl outline -outline-offset-1 outline-white/10 transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-lg data-closed:sm:translate-y-0 data-closed:sm:scale-95">
+                <div class="bg-gray-800 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                  <h1 class="h1">Objectif Majeure :</h1>
+                  <div class="sm:flex sm:items-start">
+                    <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                      <div class="mt-2">
+                        <ul>
+                          <p class="text-gray-500 mb-4 flex-1">
+                            ● Créer un site web relié à une base de données sur laquelle seront stockées les
+                            inscriptions.
+                          </p>
+                          <p class="text-gray-500 mb-4 flex-1">
+                            ● Créer une interface simpliste pour pouvoir ajouter/modifier/retirer des événements pour
+                            les personnes possédant des codes administrateurs.
+
+                          </p>
+                          <p class="text-gray-500 mb-4 flex-1">
+
+                            ● Avoir une vue dynamique sur l'état d'un événement (nombre de place réstante, ses
+                            caractéristique...)
+
+                          </p>
+                          <p class="text-gray-500 mb-4 flex-1">
+                            ● Envoie de mail de confirmation et de rappel à chaque personnes concerné.
+                          </p>
+                          <p class="text-gray-500 mb-4 flex-1">
+                            ● Créer une archive pour les événements passés.
+                          </p>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-gray-700/25 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+
+                  <button type="button" command="close" commandfor="dialog_2"
+                    class="mt-3 inline-flex w-full justify-center rounded-md bg-white/10 px-3 py-2 text-sm font-semibold text-white inset-ring inset-ring-white/5 hover:bg-white/20 sm:mt-0 sm:w-auto">Cancel</button>
+                </div>
+              </el-dialog-panel>
+            </div>
+          </dialog>
+        </el-dialog>
+
+
+        <div class="item" style="--position: 3">
+          <button command="show-modal" commandfor="dialog_3">
+
+
+            <div class="card_projet">
+              <img src="img/GSB.png" alt="Task Management App" class="w-full object-cover" />
+              <div class="">
+                <h3 class="text-xl font-semibold mb-2" style="color: black;">Site de gestion de compte</h3>
+                <p class="text-gray-500 mb-4 flex-1">
+                  Le site permet aux clients d’accéder à leur données et aux comptable de valider le remboursement des fiches de frais.
+                </p>
+
+                <div class="mb-4 flex flex-wrap gap-2">
+                <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded-full text-xs">Proxmox</span>
+                <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded-full text-xs">MySQL</span>
+                <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded-full text-xs">CodeIgniter(Php)</span>
+                <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded-full text-xs">Java Swing</span>
+                </div>
+              </div>
+            </div>
+          </button>
+        </div>
+
+
+        <el-dialog>
+          <dialog id="dialog_3" aria-labelledby="dialog-title"
+            class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent">
+            <el-dialog-backdrop
+              class="fixed inset-0 bg-gray-900/50 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"></el-dialog-backdrop>
+
+            <div tabindex="0"
+              class="flex min-h-full items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0">
+              <el-dialog-panel
+                class="relative transform overflow-hidden rounded-lg bg-gray-800 text-left shadow-xl outline -outline-offset-1 outline-white/10 transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-lg data-closed:sm:translate-y-0 data-closed:sm:scale-95">
+                <div class="bg-gray-800 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                  <h1 class="h1">Objectif Majeure :</h1>
+                  <div class="sm:flex sm:items-start">
+                    <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                      <div class="mt-2">
+                        <ul>
+                          <p class="text-gray-500 mb-4 flex-1">
+                            ● codeigniter (framework php) récupère les données stocké sur la base de données pour ensuite les afficher sur le site:
+                            <li>
+                              - Toutes données correspondant à un utilisateur quand il s'identifie.
+                            </li>
+                            <li>
+                              - Les fiches frais correspondant aux clients.
+                            </li>
+                            <li>
+                              - La liste des fiches frais non remboursées pour le comptable.
+                            </li>
+                            <br>
+                          </p>
+                          <p class="text-gray-500 mb-4 flex-1">
+                            ● Le visiteur pourra alerter un comptable qu’il à finit de rembourser ses frais.
+                          </p>
+                          <p class="text-gray-500 mb-4 flex-1">
+                            ● Le comptable peut vérifier les fiches frais et valider celle qui ont été rembourser
+                          </p>
+                          <p class="text-gray-500 mb-4 flex-1">
+                            ● Envoie de mail de confirmation et de rappel à chaque personnes concerné.
+                          </p>
+                          <p class="text-gray-500 mb-4 flex-1">
+                            ● Créer une archive pour les événements passés.
+                          </p>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-gray-700/25 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+
+                  <button type="button" command="close" commandfor="dialog_3"
+                    class="mt-3 inline-flex w-full justify-center rounded-md bg-white/10 px-3 py-2 text-sm font-semibold text-white inset-ring inset-ring-white/5 hover:bg-white/20 sm:mt-0 sm:w-auto">Cancel</button>
+                </div>
+              </el-dialog-panel>
+            </div>
+          </dialog>
+        </el-dialog>
+        
+
+
+
+  </div>
+  </div>
+</section>

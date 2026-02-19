@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>portfolio-v2</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="src/style.css">
+
+</head>
+
+<body class="m-0 p-0">
+  <ul class="w-full ">
+    <section class="section" id="home"></section>
+    <section class="section" id="about"></section>
+    <section class="section" id="projet"></section>
+    <section class="section" id="skill"></section>
+    <section class="section" id="contact"></section>
+  </ul>
+
+  <script>
+    async function loadHTML(id, url) {
+      try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error('Impossible de charger ' + url);
+        const html = await response.text();
+        document.getElementById(id).innerHTML = html;
+      } catch (e) {
+        document.getElementById(id).innerHTML = `<p class="text-red-500 p-4">${e.message}</p>`;
+      }
+    }
+    function scrollToSection(id) {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      } else {
+        console.warn("Section introuvable :", id);
+      }
+    }
+
+    loadHTML('home', 'presentation.html');
+    loadHTML('about', 'propos.html');
+    loadHTML('projet', 'projet.html');
+    loadHTML('skill', 'skill.html');
+    loadHTML('contact', 'contact.html');
+  </script>
+</body>
+
+</html>

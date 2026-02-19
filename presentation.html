@@ -1,0 +1,38 @@
+<section id="home" class="min-h-screen flex items-center bg-gray-100 pt-20">
+  <div class="mx-auto text-center py-10 px-4 max-w-3xl">
+    <h1 class="text-6xl font-extrabold text-blue-600 mb-4">Arthur Callens</h1>
+    <p class="text-gray-500 text-lg mx-auto mb-6">
+      Développeur
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-3 mt-4">
+      <button onclick="scrollToSection('about')"
+        class="border border-blue-600 text-blue-600 text-lg font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition">
+        A propos
+      </button>
+      <button onclick="scrollToSection('projet')"
+        class="border border-blue-600 text-blue-600 text-lg font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition">
+        Projet
+      </button>
+      <button onclick="scrollToSection('skill')"
+        class="border border-blue-600 text-blue-600 text-lg font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition">
+        Compétence
+      </button>
+      <button onclick="scrollToSection('contact')"
+        class="border border-blue-600 text-blue-600 text-lg font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition">
+        Contact
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<script>
+
+  function scrollToSection(id) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+</script>
